@@ -73,7 +73,7 @@ K = 7, 8, 9, 10, 11, 12, 13, 14
 
 
 ##  Evaluation protocols
-MotifGate is evaluated under group-aware protocols designed to test generalization beyond memorized motifs.
+MotifGate is evaluated under group protocols designed to test generalization beyond memorized motifs.
 ### Family-based evaluation
 In family-based evaluation, the split structure considers TF families. This protocol evaluates whether the model generalizes across groups of transcription factors sharing related DNA-binding properties.
 ### Class-based evaluation
@@ -119,7 +119,7 @@ Auxiliary losses encourage consistency with the PWM prior.
 ## Training
 The model is trained as a binary classifier using positive TFBS examples and hard negatives.
 epochs: 50
-patience: 20
+patience: 5
 batch size: 256
 learning rate: 2e-3
 weight decay: 1e-4
